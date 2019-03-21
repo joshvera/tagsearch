@@ -13,9 +13,9 @@ module GitHub
         new(*args).perform
       end
 
-      attr_reader :repo_id
-      attr_reader :repo
       attr_reader :replica
+      attr_reader :repo
+      attr_reader :repo_id
 
       def initialize(repo_id, reindex = false)
         @repo_id = repo_id
